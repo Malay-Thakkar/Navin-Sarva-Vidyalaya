@@ -1,0 +1,190 @@
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* books section styling #111*/
+.books, .members{
+    color: white;
+    background: #111;
+}
+.books .title::before,
+.members .title::before{
+    background: deepskyblue;
+}
+.books .title::after,
+.members .title::after{
+    background: #111;
+    content: "Books to refer";
+}
+.books .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 50px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.books .serv-content .card:hover{
+    background: deepskyblue;
+}
+.books .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.books .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.books .serv-content .card i{
+    font-size: 50px;
+    color: deepskyblue;
+    transition: color 0.3s ease;
+}
+.books .serv-content .card:hover i{
+    color: black;
+}
+.books .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* skills section styling */
+
+.tech .title::after{
+    content: "Languages";
+}
+.tech .tech-content .column{
+    width: calc(50% - 30px);
+}
+.tech .tech-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.tech .tech-content .left p{
+    text-align: justify;
+}
+.tech .tech-content .left a{
+    display: inline-block;
+    background: deepskyblue;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 30px;
+    border: 2px deepskyblue;
+    transition: all 0.2s ease;
+}
+.tech .tech-content .left a:hover{
+    color: white;
+    background: blue;
+}
+.tech .tech-content .right .bars{
+    margin-bottom: 15px;
+}
+.tech .tech-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.tech .tech-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.tech .tech-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.tech .tech-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: royalblue;
+}
+.tech-content .right .html::before{
+    width: 100%;
+}
+.tech-content .right .css::before{
+    width: 94.7%;
+}
+.tech-content .right .javascript::before{
+    width: 95.4%;
+}
+.tech-content .right .php::before{
+    width: 92.4%;
+}
+.tech-content .right .mysql::before{
+    width: 88.1%;
+}
+
+/* members section styling */
+.members .title::after{
+    content: "Partners";
+}
+
+.members .carousel .card:hover{
+    background: deepskyblue;
+}
+.members .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.members .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.members .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.members .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid deepskyblue;
+    transition: all 0.3s ease;
+}
+.members .carousel .card:hover img{
+    border-color: black;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid deepskyblue!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: deepskyblue!important;
+}
+

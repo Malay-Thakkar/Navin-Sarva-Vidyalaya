@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navin Sarva Vidyalaya Vadnagar </title>
+    <link rel="stylesheet" href="sample.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+</head>
+
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo"><a href="#">
+                    <h6>Navin Sarva Vidyalaya Vadnagar</h6>
+                </a></div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn">🏠</a></li>
+                <li><a href="studentcorner.html" class="menu-btn">student corner</a></li>
+                <li><a href="faculty.html" class="menu-btn">faculty</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#address" class="menu-btn">address</a></li>
+                <li><a href="#contact" class="menu-btn">Contact us</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div><br>
+        <h1>hello</h1>
+    </div>
+    <!-- slide img -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="nsv_2.jpg" style="width:100% ">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="nsv_1.jpg" style="width:100%">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="nsv_3.jpg" style="width:100%">
+        </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+
+    <!-- about section start -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="school logo.jpg" alt="Navin sarva vidhvalaya">
+                </div>
+                <div class="column right">
+                    <div class="text">History<span class="typing-2"></span></div>
+                    <p>Navin Sarva Vidyalaya, a higher secondary school, was established by Sheth Shree Manchanddas
+                        Kuberdas Patel in the memory of his father Shree Kuberdas Patel in the early 1940s. Shree
+                        Manchanddas, a native son and a very successful businessman based in Bombay (now Mumbai), had
+                        built a large Boarding House named Kuber Vadi for orphans. Sheth Manchanddas Patel This building
+                        was designed and constructed under the able supervision of the master builder Shree
+                        Purushottamdas Harikaran Suthar. When Shree Manchanddas decided to convert it into a school he
+                        naturally handed over the responsibility to Shree Purushottamdas. The school was initially
+                        started with just one class, but in a course of about ten years both these men made it into a
+                        full-fledged high-school. A separate boarding house building too was constructed. The most
+                        unique thing about the entire project was that it was financed by Shree Manchanddas alone. In
+                        the mid-fifties both these men died within a span of just two years. But before that they had
+                        the foresight to handover its management to a local committee headed by Shree Sukhrambhai
+                        Bechardas Patel. It was under his stewardship that the school was elevated to the status of a
+                        higher secondary school and more construction was done to accommodate the expanded number of
+                        students. Today it is a preferred school for the Science Stream students. In the course of its
+                        existence the school has produced a number of outstanding students. </p>
+                    <a href="#">Know More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="address" id="address">
+        <div class="max-width">
+            <h2 class="title">Address</h2>
+            <div>
+                <h1>Navin Sarva Vidyalaya,<br>near Arjunbari gate, Vadnagar(384355), <br>Mehsana,GUJRAT.</h1>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Talk to us</div>
+                    <p> Whenever You Need Us , We Are Here To Help You ! You Can Simply Email Us Or Send
+                        Enquiry So That
+                        We Will Reach Out To You As Soon As Possible .</p>
+                    <div class="icons">
+                        <div class="row">
+                            <i class="fas fa-user"></i>
+                            <div class="info">
+                                <div class="head">Name</div>
+                                <div class="sub-title">Navin sarva Vidhyalaya</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="info">
+                                <div class="head">Address</div>
+                                <div class="sub-title">Vadnagar, GUJRAT</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <i class="fas fa-envelope"></i>
+                            <div class="info">
+                                <div class="head">Email</div>
+                                <div class="sub-title">its.malaythakkar@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.facebook.com/Navin-Sarva-Vidyalaya-Vadnagar-243906282286542/"
+                                target="_blank"><span class="fab fa-facebook-square"></span></a>
+                            <a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter" "></span></a>
+             		   <a href=" https://instagram.com/" target="_blank"><span class="fab fa-instagram-square"></span></a>
+                        </div>
+
+                        <div class="field">
+                        </div>
+                    </div>
+                </div>
+                <div class="column right">
+                    <div class="text">Message Us</div>
+                    <form action="mailto:its.malaythakkar@gmail.com" method="post" enctype="text/plain">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" placeholder="Email" required>
+
+                            </div>
+                        </div>
+                        <div class="field">
+                            <input type="text" placeholder="Subject" required>
+                        </div>
+                        <div class="field textarea">
+                            <textarea cols="30" rows="10" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="button-area">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer section start -->
+
+      
+    <footer>
+        <span>Created By Malay Thakkar</a> | <span class="far fa-copyright"></span> 2021 All rights
+            reserved.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
