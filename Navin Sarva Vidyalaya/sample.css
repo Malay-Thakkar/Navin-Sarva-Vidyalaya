@@ -5,10 +5,23 @@
     height: 250px;
     box-sizing: 50px;
     display: block;
-    margin: 15 px;
-  text-align: left;
+    margin: auto;
+  text: left;
   font-size: 25px;
   cursor: pointer;
+}
+
+
+.faculty-detail{
+    float: left;
+    width: 300px;
+    height: 250px;
+    box-sizing: 50px;
+    display: block;
+    margin: 30px;
+    text: left;
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .address{
@@ -23,7 +36,7 @@
 }
 
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
