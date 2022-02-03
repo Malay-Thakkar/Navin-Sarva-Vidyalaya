@@ -1,58 +1,36 @@
- 
-                        <?php
-                        if (! empty($message)) {
-                            ?>
-                            <p class='<?php echo $type; ?>Message'><?php echo $message; ?></p>
-                        <?php
-                        }
-                        ?>
-                    </div>
-            </div>
-        </form>
+<?php
+
+$name = $_POST['name'];
+$email = $_POST['email'];
+$subject = $_POST['subject'];
+$message = $_POST['message'];
+
+$mailheader = "From:".$name."<".$email.">\r\n";
+
+$recipient = "its.malaythakkar@gmail.com";
+
+mail($recipient, $subject, $message, $mailheader) or die("Error!");
+
+echo'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Thank you for contacting me. I will get back to you as soon as possible!</h1>
+        <p class="back">Go back to the <a href="index.html">homepage</a>.</p>
+        
     </div>
-
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"
-        type="text/javascript"></script>
-    <script type="text/javascript">
-        function validateContactForm() {
-            var valid = true;
-
-            $(".info").html("");
-            $(".input-field").css('border', '#e0dfdf 1px solid');
-            var userName = $("#userName").val();
-            var userEmail = $("#userEmail").val();
-            var subject = $("#subject").val();
-            var content = $("#content").val();
-            
-            if (userName == "") {
-                $("#userName-info").html("Required.");
-                $("#userName").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-            if (userEmail == "") {
-                $("#userEmail-info").html("Required.");
-                $("#userEmail").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-            if (!userEmail.match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/))
-            {
-                $("#userEmail-info").html("Invalid Email Address.");
-                $("#userEmail").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-
-            if (subject == "") {
-                $("#subject-info").html("Required.");
-                $("#subject").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-            if (content == "") {
-                $("#userMessage-info").html("Required.");
-                $("#content").css('border', '#e66262 1px solid');
-                valid = false;
-            }
-            return valid;
-        }
-</script>
 </body>
 </html>
+';
+
+
+?>
