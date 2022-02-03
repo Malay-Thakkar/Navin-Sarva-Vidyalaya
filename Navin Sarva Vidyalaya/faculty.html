@@ -11,362 +11,323 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
 
-  <style>
-    /* * {
-      box-sizing: border-box;
-    } */
-
-    .column {
-      float: left;
-      width: 33.33%;
-      padding: 5px;
-    }
-    .row::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-
-    body {
-      margin: 0;
-      font-family: "Lato", sans-serif;
-    }
-
-    .sidebar {
-      margin: 0;
-      padding: 0;
-      width: 200px;
-      background-color: #f1f1f1;
-      position: fixed;
-      height: 100%;
-      overflow: auto;
-    }
-
-    .sidebar a {
-      display: block;
-      color: black;
-      padding: 16px;
-      text-decoration: none;
-    }
-
-    .sidebar a.active {
-      background-color: #04AA6D;
-      color: white;
-    }
-
-    .sidebar a:hover:not(.active) {
-      background-color: #555;
-      color: white;
-    }
-
-    div.content {
-      margin-left: 200px;
-      padding: 1px 16px;
-      height: 1000px;
-    }
-
-    @media screen and (max-width: 700px) {
-      .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-      }
-
-      .sidebar a {
-        float: left;
-      }
-
-      div.content {
-        margin-left: 0;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      .sidebar a {
-        text-align: center;
-        float: none;
-      }
-    }
-  </style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .column {
+            float: left;
+            width: 33.33%;
+            padding: 5px;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        body {
+            margin: 0;
+            font-family: "Lato", sans-serif;
+        }
+        
+        .sidebar {
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+            position: fixed;
+            height: 100%;
+            overflow: auto;
+        }
+        
+        .sidebar a {
+            display: block;
+            color: black;
+            padding: 16px;
+            text-decoration: none;
+        }
+        
+        .sidebar a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+        
+        .sidebar a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+        
+        div.content {
+            margin-left: 200px;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+        
+        @media screen and (max-width: 700px) {
+            .sidebar {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            .sidebar a {
+                float: left;
+            }
+            div.content {
+                margin-left: 0;
+            }
+        }
+        
+        @media screen and (max-width: 400px) {
+            .sidebar a {
+                text-align: center;
+                float: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="scroll-up-btn">
-    <i class="fas fa-angle-up"></i>
-  </div>
-
-  <!-- nav bar -->
-  <nav class="navbar">
-    <div class="max-width">
-      <div class="logo"><a href="#">
-          <h6>Navin Sarva Vidyalaya Vadnagar</h6>
-        </a></div>
-      <ul class="menu">
-        <li><a href="index.html" class="menu-btn">🏠HOME</a></li>
-        <li><a href="studentcorner.html" class="menu-btn">student corner</a></li>
-        <li><a href="faculty.html" class="menu-btn">faculty</a></li>
-        <li><a href="#about" class="menu-btn">About</a></li>
-        <li><a href="#address" class="menu-btn">address</a></li>
-        <li><a href="#contact" class="menu-btn">Contact us</a></li>
-      </ul>
-      <div class="menu-btn">
-        <i class="fas fa-bars"></i>
-      </div>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
     </div>
-  </nav>
 
-
-  <div class="col-12" style="background-color: deepskyblue;">
-    <h1></h1>
-
-  </div>
-
-
-  <section>
-    <div class="max-width">
-      <h2 class="title">FACULTY</h2>
-     
- 
-      <!-- ----------f1--------- -->
-      <div class="row">
-        <div class="faculty-img">
-          <img src="pic folder/d_p.jpg" class="faculty-img" alt="pic of Dimesh Patel">
+    <!-- nav bar -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#">
+                    <h6>Navin Sarva Vidyalaya Vadnagar</h6>
+                </a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html" class="menu-btn">🏠HOME</a></li>
+                <li><a href="studentcorner.html" class="menu-btn">student corner</a></li>
+                <li><a href="faculty.html" class="menu-btn">faculty</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li><a href="#address" class="menu-btn">address</a></li>
+                <li><a href="#contact" class="menu-btn">Contact us</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-
-        <div class="faculty-detail">
-          <p><b>Dimesh Patel<br>
-            Principal</b><br>
-              class-Teacher=std12</b><br>
-            Experience: 20 year<br>
-            Subject: Maths
-            Mo.No.:9824116059
-        </div>
-      </div><br><br>
+    </nav>
 
 
-      <!----------fx-->
-      <div class="row">
-        <div class="faculty-img">
-          <img src="pic folder/rmp.jpg" class="faculty-img" alt="pic of Ramesh Patel">
-        </div>
+    <div class="col-12" style="background-color: deepskyblue;">
+        <h1></h1>
 
-        <div class="faculty-detail">
-          <p><b>Ramesh Patel<br>
-              class-Teacher=std12</b><br>
-            Experience: 19 yearr<br>
-            Subject: biology<br>
-            Mo.No.:9825267770
-        </div>
-      </div><br><br>
-      <!-- ----------f2--------- -->
-      <div class="row">
-        <div class="faculty-img">
-          <img src="pic folder/kk.jpg" class="faculty-img" alt="pic of Krushnakant Patel">
-        </div>
-
-        <div class="faculty-detail">
-          <p><b>Krushnakant Patel<br>
-              class-Teacher=std11</b><br>
-            Experience: 20 year<br>
-            Subject: Physics
-            Mo.No.:9925429483
-        </div>
-      </div><br><br>
-      <!-- ----------f3--------- -->
-
-      <!-- ----------f1--------- -->
-
-      <div class="row">
-        <div class="faculty-img">
-          <img src="pic folder/person.jpg" class="faculty-img" alt="pic of faculty">
-        </div>
-
-        <div class="faculty-detail">
-          <p><b>Jigisha Patel<br>
-              Chemistry Leb</b><br>
-            Experience: 18<br>
-            Subject: Chemistry
-            Mo.No.:9426235360
-        </div>
-      </div><br><br>
-
- 
-      <!-- ----------f1--------- -->
-
-      <div class="row">
-        <div class="faculty-img">
-          <img src="pic folder/m_p.jpg" class="faculty-img" alt="pic of faculty">
-        </div>
-
-        <div class="faculty-detail">
-          <p><b>Mukesh Patel<br>
-              class-Teacher=std10</b><br>
-            Experience: xx<br>
-            Subject: Maths
-            Mo.No.:9429714233
-        </div>
-      </div><br><br>
-
-
-
-      <!-- ----------f1--------- -->
-
-      <div class="row">
-        <div class="faculty-img">
-          <img src="pic folder/d_p ssc.jpg" class="faculty-img" alt="pic of faculty">
-        </div>
-
-        <div class="faculty-detail">
-          <p><b>Dushant Prajapati<br>
-              class-Teacher=std9(A)</b><br>
-            Experience: xx<br>
-            Subject: Science and Technology
-            Mo.No.:9925167316
-        </div>
-      </div><br><br>
-
-      <!-- ----------f1--------- -->
-
-      <div class="row">
-        <div class="faculty-img">
-          <img src="pic folder/jipatel.jpg" class="faculty-img" alt="pic of faculty">
-        </div>
-
-        <div class="faculty-detail">
-          <p><b>J.I Patel<br>
-            class-Teacher=std9(B)</b><br>
-            Experience: xx<br>
-            Subject: Sanskrit
-            Mo.No.:9998766455
-        </div>
-      </div><br><br>
     </div>
-  </section>
 
 
+    <section>
+        <div class="max-width">
+            <h2 class="title">FACULTY</h2>
 
-  <!-- old content -->
-  <section class="about" id="about">
-    <div class="max-width">
-      <h2 class="title">About</h2>
-      <div class="about-content">
-        <div class="column left">
-          <img src="school logo.jpg" alt="Navin sarva vidhvalaya">
-        </div>
-        <div class="column right">
-          <div class="text">History<span class="typing-2"></span></div>
-          <p>Navin Sarva Vidyalaya, a higher secondary school, was established by Sheth Shree Manchanddas
-            Kuberdas Patel in the memory of his father Shree Kuberdas Patel in the early 1940s. Shree
-            Manchanddas, a native son and a very successful businessman based in Bombay (now Mumbai), had
-            built a large Boarding House named Kuber Vadi for orphans. Sheth Manchanddas Patel This building
-            was designed and constructed under the able supervision of the master builder Shree
-            Purushottamdas Harikaran Suthar. When Shree Manchanddas decided to convert it into a school he
-            naturally handed over the responsibility to Shree Purushottamdas. The school was initially
-            started with just one class, but in a course of about ten years both these men made it into a
-            full-fledged high-school. A separate boarding house building too was constructed. The most
-            unique thing about the entire project was that it was financed by Shree Manchanddas alone. In
-            the mid-fifties both these men died within a span of just two years. But before that they had
-            the foresight to handover its management to a local committee headed by Shree Sukhrambhai
-            Bechardas Patel. It was under his stewardship that the school was elevated to the status of a
-            higher secondary school and more construction was done to accommodate the expanded number of
-            students. Today it is a preferred school for the Science Stream students. In the course of its
-            existence the school has produced a number of outstanding students. </p>
-          <a href="#">Know More</a>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section class="address" id="address">
-    <div class="max-width">
-      <h2 class="title">Address</h2>
-      <div>
-        <h1>Navin Sarva Vidyalaya,<br>near Arjunbari gate, Vadnagar(384355), <br>Mehsana,GUJRAT.</h1>
-      </div>
-    </div>
-  </section>
-  <section class="contact" id="contact">
-    <div class="max-width">
-      <h2 class="title">Contact Us</h2>
-      <div class="contact-content">
-        <div class="column left">
-          <div class="text">Talk to us</div>
-          <p> Whenever You Need Us , We Are Here To Help You ! You Can Simply Email Us Or Send
-            Enquiry So That
-            We Will Reach Out To You As Soon As Possible .</p>
-          <div class="icons">
+            <!-- ----------f0--------- -->
             <div class="row">
-              <i class="fas fa-user"></i>
-              <div class="info">
-                <div class="head">Name</div>
-                <div class="sub-title">Navin sarva Vidhyalaya</div>
-              </div>
-            </div>
+                <div class="faculty-img">
+                    <img src="pic folder/d_p.jpg" class="faculty-img" alt="pic of Dimesh Patel">
+                </div>
+
+                <div class="faculty-detail">
+                    <p><b>Dimesh Patel<br>
+              Principal</b><br> class-Teacher=std12
+                        </b><br> Experience: 20 year<br> Subject: Maths Mo.No.:9824116059
+                </div>
+            </div><br><br>
+
+
+            <!----------f1---------->
             <div class="row">
-              <i class="fas fa-map-marker-alt"></i>
-              <div class="info">
-                <div class="head">Address</div>
-                <div class="sub-title">Vadnagar, GUJRAT</div>
-              </div>
-            </div>
+                <div class="faculty-img">
+                    <img src="pic folder/rmp.jpg" class="faculty-img" alt="pic of Ramesh Patel">
+                </div>
+
+                <div class="faculty-detail">
+                    <p><b>Ramesh Patel<br>
+              class-Teacher=std12</b><br> Experience: 19 yearr<br> Subject: biology<br> Mo.No.:9825267770
+                </div>
+            </div><br><br>
+            <!-- ----------f2--------- -->
             <div class="row">
-              <i class="fas fa-envelope"></i>
-              <div class="info">
-                <div class="head">Email</div>
-                <div class="sub-title">its.malaythakkar@gmail.com</div>
-              </div>
-            </div>
-            <div class="social">
-              <a href="https://www.facebook.com/Navin-Sarva-Vidyalaya-Vadnagar-243906282286542/" target="_blank"><span
-                  class="fab fa-facebook-square"></span></a>
-              <a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter" "></span></a>
-                    <a href=" https://instagram.com/" target="_blank"><span class="fab fa-instagram-square"></span></a>
-            </div>
+                <div class="faculty-img">
+                    <img src="pic folder/kk.jpg" class="faculty-img" alt="pic of Krushnakant Patel">
+                </div>
 
-            <div class="field">
-            </div>
-          </div>
+                <div class="faculty-detail">
+                    <p><b>Krushnakant Patel<br>
+              class-Teacher=std11</b><br> Experience: 20 year<br> Subject: Physics Mo.No.:9925429483
+                </div>
+            </div><br><br>
+
+            <!-- ----------f3--------- -->
+
+            <div class="row">
+                <div class="faculty-img">
+                    <img src="pic folder/person.jpg" class="faculty-img" alt="pic of faculty">
+                </div>
+
+                <div class="faculty-detail">
+                    <p><b>Jigisha Patel<br>
+              Chemistry Leb</b><br> Experience: 18<br> Subject: Chemistry Mo.No.:9426235360
+                </div>
+            </div><br><br>
+
+
+            <!-- ----------f4--------- -->
+
+            <div class="row">
+                <div class="faculty-img">
+                    <img src="pic folder/m_p.jpg" class="faculty-img" alt="pic of faculty">
+                </div>
+
+                <div class="faculty-detail">
+                    <p><b>Mukesh Patel<br>
+              class-Teacher=std10</b><br> Experience: xx<br> Subject: Maths Mo.No.:9429714233
+                </div>
+            </div><br><br>
+
+
+
+            <!-- ----------f5--------- -->
+
+            <div class="row">
+                <div class="faculty-img">
+                    <img src="pic folder/d_p ssc.jpg" class="faculty-img" alt="pic of faculty">
+                </div>
+
+                <div class="faculty-detail">
+                    <p><b>Dushant Prajapati<br>
+              class-Teacher=std9(A)</b><br> Experience: xx<br> Subject: Science and Technology Mo.No.:9925167316
+                </div>
+            </div><br><br>
+
+            <!-- ----------f6--------- -->
+
+            <div class="row">
+                <div class="faculty-img">
+                    <img src="pic folder/jipatel.jpg" class="faculty-img" alt="pic of faculty">
+                </div>
+
+                <div class="faculty-detail">
+                    <p><b>J.I Patel<br>
+              class-Teacher=std9(B)</b><br> Experience: xx<br> Subject: Sanskrit Mo.No.:9998766455
+                </div>
+            </div><br><br>
         </div>
-        <div class="column right">
-          <div class="text">Message Us</div>
-          <form action="mail.php" method="post" enctype="text/plain">
-            <div class="fields">
-              <div class="field name">
-                <input type="text" placeholder="Name" required>
-              </div>
-              <div class="field email">
-                <input type="email" placeholder="Email" required>
+    </section>
 
-              </div>
+
+
+    <!-- old content -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About</h2>
+            <div class="about-content">
+                <div class="column left">
+                    <img src="school logo.jpg" alt="Navin sarva vidhvalaya">
+                </div>
+                <div class="column right">
+                    <div class="text">History<span class="typing-2"></span></div>
+                    <p>Navin Sarva Vidyalaya, a higher secondary school, was established by Sheth Shree Manchanddas Kuberdas Patel in the memory of his father Shree Kuberdas Patel in the early 1940s. Shree Manchanddas, a native son and a very successful
+                        businessman based in Bombay (now Mumbai), had built a large Boarding House named Kuber Vadi for orphans. Sheth Manchanddas Patel This building was designed and constructed under the able supervision of the master builder Shree
+                        Purushottamdas Harikaran Suthar. When Shree Manchanddas decided to convert it into a school he naturally handed over the responsibility to Shree Purushottamdas. The school was initially started with just one class, but in a course
+                        of about ten years both these men made it into a full-fledged high-school. A separate boarding house building too was constructed. The most unique thing about the entire project was that it was financed by Shree Manchanddas alone.
+                        In the mid-fifties both these men died within a span of just two years. But before that they had the foresight to handover its management to a local committee headed by Shree Sukhrambhai Bechardas Patel. It was under his stewardship
+                        that the school was elevated to the status of a higher secondary school and more construction was done to accommodate the expanded number of students. Today it is a preferred school for the Science Stream students. In the course
+                        of its existence the school has produced a number of outstanding students. </p>
+                    <a href="#">Know More</a>
+                </div>
             </div>
-            <div class="field">
-              <input type="text" placeholder="Subject" required>
-            </div>
-            <div class="field textarea">
-              <textarea cols="30" rows="10" placeholder="Message" required></textarea>
-            </div>
-            <div class="button-area">
-              <button type="submit">Submit</button>
-            </div>
-          </form>
         </div>
-      </div>
-    </div>
-  </section>
-  </div>
-                    <!-- footer section start -->
+    </section>
 
-      
+    <section class="address" id="address">
+        <div class="max-width">
+            <h2 class="title">Address</h2>
+            <div>
+                <h1>Navin Sarva Vidyalaya,<br>near Arjunbari gate, Vadnagar(384355), <br>Mehsana,GUJRAT.</h1>
+            </div>
+        </div>
+    </section>
+    <!-- contact section start -->
+    <section class="contact" id="contact">
+        <div class="max-width">
+            <h2 class="title">Contact Us</h2>
+            <div class="columns">
+                <div class="col col-50">
+                    <h2>We Are Here To Help You !</h2>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-user"> Name</i>
+                        <div class="info">
+                            <div class="sub-title">Navin sarva Vidhyalaya</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"> Address</i>
+                        <div class="info">
+                            <div class="sub-title">near Arjunbari gate, Vadnagar,<br> GUJRAT</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-envelope"> Email</i>
+                        <div class="info">
+                            <div class="sub-title">navin_vadnagar@yahoo.com</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-phone"> Phone No.</i>
+                        <div class="info">
+                            <div class="sub-title">02761 222 064</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="social">
+                        <a href="https://www.facebook.com/Navin-Sarva-Vidyalaya-Vadnagar-243906282286542/" target="_blank"><span class="fab fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter"></span></a>
+                        <a href=" https://instagram.com/" target="_blank"><span class="fab fa-instagram-square"></span></a>
+                    </div>
+                </div>
+                <div class="col col-50">
+                    <div class="container">
+                        <h2>Message Us</h2>
+                        <form action="mail.php">
+                            <div class="contact-form">
+                                <label for="name"> Name:  </label>
+                                <input type="text" name="name" id="name" placeholder="Enter your Name"><br>
+                                <label for="email">Email id:  </label>
+                                <input type="email" name="email" id="email" placeholder="Your mail id"><br>
+                                <label for="subject">Subject: </label>
+                                <input type="text" name="subject" id="subject" placeholdere="Subject "><br>
+                                <label for="message">Message: </label>
+                                <textarea name="message" cols="30" rows="5" placeholder="write your Message/Quarry."></textarea>
+                                <br>
+                                <input type="submit" value="Send">
+                                <div>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!-- footer section start -->
     <footer>
-        <span>Created By Malay Thakkar</a> | <span class="far fa-copyright"></span> 2021 All rights
-            reserved.</span>
+        <span>Created By Malay Thakkar</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.
+        </span>
     </footer>
-
     <script src="script.js"></script>
 </body>
 
