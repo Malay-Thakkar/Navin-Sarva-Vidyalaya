@@ -11,9 +11,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
 <body>
@@ -22,10 +20,12 @@
     </div>
     <nav class="navbar">
         <div class="max-width">
-            <div class="logo"><a href="#">
+            <div class="logo">
+                <a href="#">
                     <h6>Navin Sarva Vidyalaya Vadnagar</h6>
-                </a></div>
-                <ul class="menu">
+                </a>
+            </div>
+            <ul class="menu">
                 <li><a href="#home" class="menu-btn">🏠HOME</a></li>
                 <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeRqVwkGkkC5VyHEqrt-Pkw46zjCBdBDCjHbp-LPGhzYck8yg/viewform" class="menu-btn">Admission</a></li>
                 <li><a href="studentcorner.html" class="menu-btn">student corner</a></li>
@@ -39,38 +39,31 @@
             </div>
         </div>
     </nav>
-    <div><br>
+    <div>
+        <br>
         <h1>hello</h1>
     </div>
     <!-- slide img -->
     <div class="slideshow-container">
-
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
             <img src="nsv_3.jpg" style="width:100% ">
-
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
             <img src="nsv_1.jpg" style="width:100%">
-
         </div>
-
         <div class="mySlides fade">
             <div class="numbertext">3 / 3</div>
             <img src="nsv_2.jpg" style="width:100%">
         </div>
-
     </div>
     <br>
-
     <div style="text-align:center">
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
     </div>
-
     <script>
         var slideIndex = 0;
         showSlides();
@@ -83,7 +76,9 @@
                 slides[i].style.display = "none";
             }
             slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
@@ -92,7 +87,6 @@
             setTimeout(showSlides, 3000); // Change image every 2 seconds
         }
     </script>
-
     <!-- about section start -->
     <section class="about" id="about">
         <div class="max-width">
@@ -103,27 +97,19 @@
                 </div>
                 <div class="column right">
                     <div class="text">History<span class="typing-2"></span></div>
-                    <p>Navin Sarva Vidyalaya, a higher secondary school, was established by Sheth Shree Manchanddas
-                        Kuberdas Patel in the memory of his father Shree Kuberdas Patel in the early 1940s. Shree
-                        Manchanddas, a native son and a very successful businessman based in Bombay (now Mumbai), had
-                        built a large Boarding House named Kuber Vadi for orphans. Sheth Manchanddas Patel This building
-                        was designed and constructed under the able supervision of the master builder Shree
-                        Purushottamdas Harikaran Suthar. When Shree Manchanddas decided to convert it into a school he
-                        naturally handed over the responsibility to Shree Purushottamdas. The school was initially
-                        started with just one class, but in a course of about ten years both these men made it into a
-                        full-fledged high-school. A separate boarding house building too was constructed. The most
-                        unique thing about the entire project was that it was financed by Shree Manchanddas alone. In
-                        the mid-fifties both these men died within a span of just two years. But before that they had
-                        the foresight to handover its management to a local committee headed by Shree Sukhrambhai
-                        Bechardas Patel. It was under his stewardship that the school was elevated to the status of a
-                        higher secondary school and more construction was done to accommodate the expanded number of
-                        students. Today it is a preferred school for the Science Stream students. In the course of its
-                        existence the school has produced a number of outstanding students. </p>
+                    <p>Navin Sarva Vidyalaya, a higher secondary school, was established by Sheth Shree Manchanddas Kuberdas Patel in the memory of his father Shree Kuberdas Patel in the early 1940s. Shree Manchanddas, a native son and a very successful
+                        businessman based in Bombay (now Mumbai), had built a large Boarding House named Kuber Vadi for orphans. Sheth Manchanddas Patel This building was designed and constructed under the able supervision of the master builder Shree
+                        Purushottamdas Harikaran Suthar. When Shree Manchanddas decided to convert it into a school he naturally handed over the responsibility to Shree Purushottamdas. The school was initially started with just one class, but in a course
+                        of about ten years both these men made it into a full-fledged high-school. A separate boarding house building too was constructed. The most unique thing about the entire project was that it was financed by Shree Manchanddas alone.
+                        In the mid-fifties both these men died within a span of just two years. But before that they had the foresight to handover its management to a local committee headed by Shree Sukhrambhai Bechardas Patel. It was under his stewardship
+                        that the school was elevated to the status of a higher secondary school and more construction was done to accommodate the expanded number of students. Today it is a preferred school for the Science Stream students. In the course
+                        of its existence the school has produced a number of outstanding students.
+                    </p>
+                    <a href="#">Know More</a>
                 </div>
             </div>
         </div>
     </section>
-
     <section class="address" id="address">
         <div class="max-width">
             <h2 class="title">Address</h2>
@@ -132,101 +118,74 @@
             </div>
         </div>
     </section>
-
-
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
             <h2 class="title">Contact Us</h2>
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text">Talk to us</div>
-                    <p> Whenever You Need Us , We Are Here To Help You ! conteact us
-                        so We Will Reach Out To You As Soon As Possible .</p>
-
-                    <div class="icons">
-                        <div class="row">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Navin sarva Vidhyalaya</div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">near Arjunbari gate, Vadnagar,<br> GUJRAT</div>
-                            </div>
-                        </div>
-
-
-                        <div class="row">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">navin_vadnagar@yahoo.com</div>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <i>☎</i>
-                            <div class="info">
-                                <div class="head">Phone No.</div>
-                                <div class="sub-title">02761 222 064</div>
-                            </div>
-                        </div>
-
-
-                        <div class="social">
-                            <a href="https://www.facebook.com/Navin-Sarva-Vidyalaya-Vadnagar-243906282286542/"
-                                target="_blank"><span class="fab fa-facebook-square"></span></a>
-                            <a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter"></span></a>
-             		   <a href=" https://instagram.com/" target="_blank"><span class="fab fa-instagram-square"></span></a>
-                        </div>
-
-                        <div class="field">
+            <div class="columns">
+                <div class="col col-50">
+                    <h2>We Are Here To Help You !</h2>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-user"> Name</i>
+                        <div class="info">
+                            <div class="sub-title">Navin sarva Vidhyalaya</div>
                         </div>
                     </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-map-marker-alt"> Address</i>
+                        <div class="info">
+                            <div class="sub-title">near Arjunbari gate, Vadnagar,<br> GUJRAT</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-envelope"> Email</i>
+                        <div class="info">
+                            <div class="sub-title">navin_vadnagar@yahoo.com</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <i class="fas fa-phone"> Phone No.</i>
+                        <div class="info">
+                            <div class="sub-title">02761 222 064</div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="social">
+                        <a href="https://www.facebook.com/Navin-Sarva-Vidyalaya-Vadnagar-243906282286542/" target="_blank"><span class="fab fa-facebook-square"></span></a>
+                        <a href="https://twitter.com/" target="_blank"><span class="fab fa-twitter"></span></a>
+                        <a href=" https://instagram.com/" target="_blank"><span class="fab fa-instagram-square"></span></a>
+                    </div>
                 </div>
-                <div class="column right">
-                    <div class="text">Message Us</div>
-                    <form action="mailto:navin_vadnagar@yahoo.com" method="post" enctype="text/plain">
-                        <div class="fields">
-                            <div class="field name">
-                                <input type="text" placeholder="Name" required>
+                <div class="col col-50">
+                    <div class="container">
+                        <h2>Message Us</h2>
+                        <form action="mail.php">
+                            <div class="contact-form">
+                                <label for="name"> Name:  </label>
+                                <input type="text" name="name" id="name" placeholder="Enter your Name"><br>
+                                <label for="email">Email id:  </label>
+                                <input type="email" name="email" id="email" placeholder="Your mail id"><br>
+                                <label for="subject">Subject: </label>
+                                <input type="text" name="subject" id="subject" placeholdere="Subject "><br>
+                                <label for="message">Message: </label>
+                                <textarea name="message" cols="30" rows="5" placeholder="write your Message/Quarry."></textarea>
+                                <br>
+                                <input type="submit" value="Send">
                             </div>
-                            <div class="field email">
-                                <input type="email" placeholder="Email" required>
-
-                            </div>
-                        </div>
-                        <div class="field">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea">
-                            <textarea cols="30" rows="10" placeholder="Message" required></textarea>
-                        </div>
-                        <div class="button-area">
-                            <button type="submit">Submit</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
     </section>
-
     <!-- footer section start -->
-
-      
     <footer>
-        <span>Created By Malay Thakkar</a> | <span class="far fa-copyright"></span> 2021 All rights
-            reserved.</span>
+        <span>Created By Malay Thakkar</a> | <span class="far fa-copyright"></span> 2021 All rights reserved.
+        </span>
     </footer>
-
     <script src="script.js"></script>
 </body>
-
 </html>
