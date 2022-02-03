@@ -12,6 +12,7 @@ $recipient = "its.malaythakkar@gmail.com";
 mail($recipient, $subject, $message, $mailheader) or die("Error!");
 
 echo'
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -30,6 +31,9 @@ echo'
     </div>
 </body>
 </html>
+
+
+
 ';
 
 
